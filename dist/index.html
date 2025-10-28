@@ -18,16 +18,14 @@
 </head>
 <body>
 
-    <!-- npx @tailwindcss/cli -i ./src/input.css -o ./dist/style.css --watch -->
-    
     <!-- Header Part -->
-    <header class="bg-[url('./assets/img/cover.png')]  bg-no-repeat bg-cover h-screen bg-center relative w-screen">
+    <header id="home" class="bg-[url('./assets/img/cover.png')]  bg-no-repeat bg-cover h-screen bg-center relative w-full">
             
         <div class="layer w-full h-full bg-[rgba(0,0,0,0.8)] absolute">
 
-            <nav class=" border-gray-200 dark:bg-gray-900 md:px-25 max-w-[1370px] mx-auto container">
+            <nav class=" border-gray-200 px-4 md:px-10 lg:px-25 max-w-[1370px] mx-auto">
             <div class="max-w-7xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <a href="#home" class="flex items-center space-x-3 rtl:space-x-reverse">
                     <!-- <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" /> -->
                     <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">It's Me</span>
                 </a>
@@ -40,63 +38,63 @@
                 <div class="hidden w-full md:block md:w-auto" id="navbar-default">
                 <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                     <li>
-                    <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent  md:p-0  md:hover:text-[#00eeff]" aria-current="page">Home</a>
+                    <a href="#home" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent  md:p-0  md:hover:text-[#00eeff]" aria-current="page">Home</a>
                     </li>
                     <li>
-                    <a href="#" class="block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#00eeff] md:p-0 text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                    <a href="#about" class="block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#00eeff] md:p-0 text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
                     </li>
                     <li>
-                    <a href="#" class="block py-2 px-3  rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#00eeff] md:p-0 text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Skills</a>
+                    <a href="#skills" class="block py-2 px-3  rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#00eeff] md:p-0 text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Skills</a>
                     </li>
                     <li>
-                    <a href="#" class="block py-2 px-3  rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#00eeff] md:p-0 text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+                    <a href="#services" class="block py-2 px-3  rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#00eeff] md:p-0 text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
                     </li>
                     <li>
-                    <a href="#" class="block py-2 px-3  rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#00eeff] md:p-0 text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Portfolio</a>
+                    <a href="#portfolio" class="block py-2 px-3  rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#00eeff] md:p-0 text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Portfolio</a>
                     </li>
                     <li>
-                    <a href="#" class="block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#00eeff] md:p-0 text-white md:dark:hover:text-[#00eeff] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                    <a href="#contact" class="block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#00eeff] md:p-0 text-white md:dark:hover:text-[#00eeff] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
                     </li>
                 </ul>
                 </div>
             </div>
             </nav>
     
-            <div class="hero md:px-25 flex sm:gap-40 m-5 flex-col md:flex-row content-center max-w-[1370px] mx-auto container">
-                <div class="left w-[50%] mt-20">
-                    <h1 class="font-semibold text-[52px] uppercase text-white">Md Arman Islam</h1>
-                    <h2 class="font-semibold text-[32px] text-white">And I'm a <span class="text-[#00eeff]">Frontend Developer</span></h2>
-                    <p class="font-semibold text-[16px] text-white mt-3">I'm professional web developer with strong skill in HTML, 
+            <div class="hero px-4 md:px-10 lg:px-25 flex flex-col-reverse md:flex-row items-center justify-between max-w-[1370px] mx-auto h-[calc(100vh-80px)]">
+                <div class="left w-full md:w-1/2 mb-10 md:mt-0">
+                    <h1 class="font-semibold text-4xl md:text-5xl lg:text-[52px] uppercase text-white">Md Arman Islam</h1>
+                    <h2 class="font-semibold text-2xl md:text-3xl lg:text-[32px] text-white mt-2">And I'm a <span class="text-[#00eeff]">Frontend Developer</span></h2>
+                    <p class="font-medium text-base md:text-lg text-white mt-4">I'm professional web developer with strong skill in HTML, 
         CSS, JavaScript, Tailwind, JQuery etc. I have working in this 
         field almost 3 years and all projects are complited successfully 
         with 100% client satisfiction.</p>
     
-                    <div class="icons flex justify-between w-[230px] gap-6 mt-7">
+                    <div class="icons flex gap-6 mt-6">
                         <a href="#"><img src="./assets/img/fb.png" alt=""></a>
                         <a href="#"><img src="./assets/img/github.png" alt=""></a>
                         <a href="#"><img src="./assets/img/envelop.png" alt=""></a>
                         <a href="#"><img src="./assets/img/linkedin.png" alt=""></a>
                         <a href="#"><img src="./assets/img/github.png" alt=""></a>
                     </div>
-                    <div class="buttons w-[360px] mt-7">
+                    <div class="buttons flex flex-wrap gap-4 mt-7">
                         <button class="px-6 py-2 bg-[#00eeff] rounded-3xl text-black text-[16px] mr-5 cursor-pointer">Download CV</button>
                         <button class="px-6 py-2 bg-[#00eeff] rounded-3xl text-black text-[16px] cursor-pointer">Portfolio</button>
                     </div>
                 </div>
-                <div class="right mt-10">
-                    <img src="./assets/img/me.png" alt="" class="h-100 w-auto">
+                <div class="right mt-10 md:mt-0 flex justify-center md:justify-center w-full md:w-1/2">
+                    <img src="./assets/img/me.png" alt="" class="w-64 h-auto md:w-80 md:h-auto lg:w-96 lg:h-auto">
                 </div>
             </div>
         </div>
 
     </header>
 <!-- Education Section -->
-    <section class="about bg-[#323946]">
-        <div class="max-w-[1370px] mx-auto container pb-20">
-            <h2 class="font-bold text-4xl text-white text-center pt-35 pb-10">About <span class="text-[#00eeff]">Me</span></h2>
+    <section id="about" class="about bg-[#323946] py-16">
+        <div class="max-w-[1370px] mx-auto px-4 md:px-10 lg:px-25">
+            <h2 class="font-bold text-3xl md:text-4xl text-white text-center pt-10 pb-12">About <span class="text-[#00eeff]">Me</span></h2>
 
-        <div class="content flex px-25 gap-20">
-            <div class="left mt-10 ">
+        <div class="content flex flex-col md:flex-row gap-10 lg:gap-20">
+            <div class="left mt-10 flex justify-center">
                 <div class="p-5 bg-[#00eeff] flex justify-center items-center h-[400px] w-[400px] mt-52 flex-col rounded-3xl">
                     <div class="img w-60 h-60 rounded-[100%] bg-amber-700 -top-30 -left-[50%] -mt-50 border-5 border-[#323946] bg-[url('./assets/img/me2.jpg')] bg-cover">
                         
@@ -111,7 +109,7 @@
 
                 </div>
              </div>
-        <div class="right">
+        <div class="right w-full">
             <ul class="flex  mt-10">
                 <li class="p-2.5"><a href="#" class="text-[#00eeff] underline py-3 font-bold text-[20px]">Educational Quallification</a></li>
                 <li class="p-2.5"><a href="#"  class="text-white font-bold text-[20px]">Short Course</a></li>
@@ -139,25 +137,25 @@
         </div>
         </div>
         </div>
-    </section>
+    </section>
 
-    <!-- Skills Section -->
-    <section class="about bg-[#1F242D]">
-       <div class="max-w-[1370px] mx-auto container ">
+<!-- Skills Section -->
+    <section id="skills" class="skills bg-[#1F242D] py-16">
+       <div class="max-w-[1370px] mx-auto px-4 md:px-10 lg:px-25">
              <div class="pb-20">
-                <h2 class="font-bold text-4xl text-white text-center pt-35 pb-10">My <span class="text-[#00eeff]">Skills</span></h2>
+                <h2 class="font-bold text-3xl md:text-4xl text-white text-center pt-10 pb-12">My <span class="text-[#00eeff]">Skills</span></h2>
             </div>
 
-        <div class="skills grid md:grid-cols-2 ">
+        <div class="skills grid grid-cols-1 md:grid-cols-2 gap-6">
 
-                <div class="html flex w-[560px] gap-4 items-center mb-9">
+                <div class="html flex w-full gap-4 items-center mb-9">
                     <div class="img">
                         <img src="./assets/img/html.png" alt="">
                     </div>
-                <div class="progress">
+                <div class="progress w-full">
                     <p class="text-white font-bold text-[20px] py-3">HTML-5</p>
 
-                    <div class="w-[415px] bg-[#323946] rounded-full h-[25px]">
+                    <div class="w-full bg-[#323946] rounded-full h-[25px]">
                         <div class="bg-cyan-400 h-[25px] rounded-full flex items-center justify-end pr-2 text-white text-m font-semibold w-[90%]">
                         90%
                         </div>
@@ -165,14 +163,14 @@
                 </div>
                 </div>
 
-                <div class="css flex w-[560px] gap-4 items-center mb-9">
+                <div class="css flex w-full gap-4 items-center mb-9">
                     <div class="img">
                         <img src="./assets/img/css.png" alt="">
                     </div>
-                <div class="progress">
+                <div class="progress w-full">
                     <p class="text-white font-bold text-[20px] py-3">CSS</p>
 
-                    <div class="w-[415px] bg-[#323946] rounded-full h-[25px]">
+                    <div class="w-full bg-[#323946] rounded-full h-[25px]">
                         <div class="bg-cyan-400 h-[25px] rounded-full flex items-center justify-end pr-2 text-white text-m font-semibold w-[80%]">
                         80%
                         </div>
@@ -180,14 +178,14 @@
                 </div>
                 </div>
 
-                <div class="tailwind flex w-[560px] gap-4 items-center mb-9">
+                <div class="tailwind flex w-full gap-4 items-center mb-9">
                     <div class="img">
                         <img src="./assets/img/taiwind.png" alt="">
                     </div>
-                <div class="progress">
+                <div class="progress w-full">
                     <p class="text-white font-bold text-[20px] py-3">Tailwind Css</p>
 
-                    <div class="w-[415px] bg-[#323946] rounded-full h-[25px]">
+                    <div class="w-full bg-[#323946] rounded-full h-[25px]">
                         <div class="bg-cyan-400 h-[25px] rounded-full flex items-center justify-end pr-2 text-white text-m font-semibold w-[80%]">
                         80%
                         </div>
@@ -195,14 +193,14 @@
                 </div>
                 </div>
 
-                <div class="js flex w-[560px] gap-4 items-center mb-9">
+                <div class="js flex w-full gap-4 items-center mb-9">
                     <div class="img">
                         <img src="./assets/img/js.png" alt="">
                     </div>
-                <div class="progress">
+                <div class="progress w-full">
                     <p class="text-white font-bold text-[20px] py-3">Javascript</p>
 
-                    <div class="w-[415px] bg-[#323946] rounded-full h-[25px]">
+                    <div class="w-full bg-[#323946] rounded-full h-[25px]">
                         <div class="bg-cyan-400 h-[25px] rounded-full flex items-center justify-end pr-2 text-white text-m font-semibold w-[60%]">
                         80%
                         </div>
@@ -210,14 +208,14 @@
                 </div>
                 </div>
 
-                <div class="react flex w-[560px] gap-4 items-center mb-9">
+                <div class="react flex w-full gap-4 items-center mb-9">
                     <div class="img">
-                        <img src="./assets/img/css.png" alt="">
+                        <img src="./assets/img/react.png" alt="">
                     </div>
-                <div class="progress">
+                <div class="progress w-full">
                     <p class="text-white font-bold text-[20px] py-3">React</p>
 
-                    <div class="w-[415px] bg-[#323946] rounded-full h-[25px]">
+                    <div class="w-full bg-[#323946] rounded-full h-[25px]">
                         <div class="bg-cyan-400 h-[25px] rounded-full flex items-center justify-end pr-2 text-white text-m font-semibold w-[60%]">
                         60%
                         </div>
@@ -225,14 +223,14 @@
                 </div>
                 </div>
                 
-                <div class="figma flex w-[560px] gap-4 items-center mb-9">
+                <div class="figma flex w-full gap-4 items-center mb-9">
                     <div class="img">
                         <img src="./assets/img/figma.png" alt="">
                     </div>
-                <div class="progress">
+                <div class="progress w-full">
                     <p class="text-white font-bold text-[20px] py-3">Figma</p>
 
-                    <div class="w-[415px] bg-[#323946] rounded-full h-[25px]">
+                    <div class="w-full bg-[#323946] rounded-full h-[25px]">
                         <div class="bg-cyan-400 h-[25px] rounded-full flex items-center justify-end pr-2 text-white text-m font-semibold w-[90%]">
                         90%
                         </div>
@@ -240,14 +238,14 @@
                 </div>
                 </div>
 
-                <div class="pShop flex w-[560px] gap-4 items-center mb-9">
+                <div class="pShop flex w-full gap-4 items-center mb-9">
                     <div class="img">
                         <img src="./assets/img/photoshop.png" alt="">
                     </div>
-                <div class="progress">
+                <div class="progress w-full">
                     <p class="text-white font-bold text-[20px] py-3">Adobe Photoshop</p>
 
-                    <div class="w-[415px] bg-[#323946] rounded-full h-[25px]">
+                    <div class="w-full bg-[#323946] rounded-full h-[25px]">
                         <div class="bg-cyan-400 h-[25px] rounded-full flex items-center justify-end pr-2 text-white text-m font-semibold w-[65%]">
                         65%
                         </div>
@@ -255,14 +253,14 @@
                 </div>
                 </div>
 
-                <div class="ai flex w-[560px] gap-4 items-center mb-9">
+                <div class="ai flex w-full gap-4 items-center mb-9">
                     <div class="img">
                         <img src="./assets/img/ai.png" alt="">
                     </div>
-                <div class="progress">
+                <div class="progress w-full">
                     <p class="text-white font-bold text-[20px] py-3">Adobe Illustrator</p>
 
-                    <div class="w-[415px] bg-[#323946] rounded-full h-[25px]">
+                    <div class="w-full bg-[#323946] rounded-full h-[25px]">
                         <div class="bg-cyan-400 h-[25px] rounded-full flex items-center justify-end pr-2 text-white text-m font-semibold w-[70%]">
                         70%
                         </div>
@@ -273,14 +271,14 @@
 
         </div>
        </div>
-    </section>
+    </section>
 
-    <!-- My Services -->
+<!-- My Services -->
 
-    <section class="about bg-[#323946]">
-       <div class="max-w-[1370px] mx-auto container ">
+    <section id="services" class="services bg-[#323946] py-16">
+       <div class="max-w-[1370px] mx-auto px-4 md:px-10 lg:px-25">
               <div class="pb-20">
-                <h2 class="font-bold text-4xl text-white text-center pt-35 pb-10">My <span class="text-[#00eeff]">Services</span></h2>
+                <h2 class="font-bold text-3xl md:text-4xl text-white text-center pt-10 pb-12">My <span class="text-[#00eeff]">Services</span></h2>
              </div>
 
              <div class="cards pb-20">
@@ -342,11 +340,11 @@
     </section>
 
     <!-- Portfolio Section -->
-     <section class="portfolio bg-[#1F242D]">
-    <div class="max-w-[1370px] mx-auto container ">
+     <section id="portfolio" class="portfolio bg-[#1F242D] py-16">
+    <div class="max-w-[1370px] mx-auto px-4 md:px-10 lg:px-25">
 
         <div class="pb-20">
-                <h2 class="font-bold text-4xl text-white text-center pt-35 pb-10">My <span class="text-[#00eeff]">Portfolio</span></h2>
+                <h2 class="font-bold text-3xl md:text-4xl text-white text-center pt-10 pb-12">My <span class="text-[#00eeff]">Portfolio</span></h2>
         </div>
 
 
@@ -397,7 +395,22 @@
 
     </div>
     </div>
-  </section>
+  </section>
 
+    
+
+
+
+<!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.querySelector('[data-collapse-toggle="navbar-default"]');
+            const menu = document.getElementById('navbar-default');
+            
+            menuButton.addEventListener('click', function() {
+                menu.classList.toggle('hidden');
+            });
+        });
+    </script>
 </body>
 </html>
