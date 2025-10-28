@@ -247,6 +247,9 @@
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
   }
@@ -265,6 +268,9 @@
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
+  .mb-5 {
+    margin-bottom: calc(var(--spacing) * 5);
+  }
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
   }
@@ -273,6 +279,9 @@
   }
   .mb-10 {
     margin-bottom: calc(var(--spacing) * 10);
+  }
+  .mb-15 {
+    margin-bottom: calc(var(--spacing) * 15);
   }
   .block {
     display: block;
@@ -446,6 +455,13 @@
       margin-inline-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-x-reverse)));
     }
   }
+  .space-x-14 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 14) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 14) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
   .self-center {
     align-self: center;
   }
@@ -491,6 +507,9 @@
   .border-\[\#323946\] {
     border-color: #323946;
   }
+  .border-cyan-400 {
+    border-color: var(--color-cyan-400);
+  }
   .border-gray-200 {
     border-color: var(--color-gray-200);
   }
@@ -500,8 +519,26 @@
   .bg-\[\#1F242D\] {
     background-color: #1F242D;
   }
+  .bg-\[\#1\] {
+    background-color: #1;
+  }
+  .bg-\[\#1f242d\] {
+    background-color: #1f242d;
+  }
+  .bg-\[\#1f\] {
+    background-color: #1f;
+  }
+  .bg-\[\#2E343E\] {
+    background-color: #2E343E;
+  }
   .bg-\[\#3C434E\] {
     background-color: #3C434E;
+  }
+  .bg-\[\#232\] {
+    background-color: #232;
+  }
+  .bg-\[\#232832\] {
+    background-color: #232832;
   }
   .bg-\[\#323946\] {
     background-color: #323946;
@@ -601,14 +638,23 @@
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
+  }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
+  }
+  .px-7 {
+    padding-inline: calc(var(--spacing) * 7);
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
   }
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
@@ -778,6 +824,20 @@
       }
     }
   }
+  .hover\:bg-\[\#00eeff\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #00eeff;
+      }
+    }
+  }
+  .hover\:bg-\[\#\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #;
+      }
+    }
+  }
   .hover\:bg-cyan-400 {
     &:hover {
       @media (hover: hover) {
@@ -796,6 +856,34 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-red-500);
+      }
+    }
+  }
+  .hover\:text-\[\#00\] {
+    &:hover {
+      @media (hover: hover) {
+        color: #00;
+      }
+    }
+  }
+  .hover\:text-\[\#00eeff\] {
+    &:hover {
+      @media (hover: hover) {
+        color: #00eeff;
+      }
+    }
+  }
+  .hover\:text-\[\#\] {
+    &:hover {
+      @media (hover: hover) {
+        color: #;
+      }
+    }
+  }
+  .hover\:text-black {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-black);
       }
     }
   }
@@ -979,6 +1067,11 @@
       padding-inline: calc(var(--spacing) * 10);
     }
   }
+  .md\:px-15 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 15);
+    }
+  }
   .md\:text-3xl {
     @media (width >= 48rem) {
       font-size: var(--text-3xl);
@@ -1041,9 +1134,19 @@
       gap: calc(var(--spacing) * 20);
     }
   }
+  .lg\:px-20 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 20);
+    }
+  }
   .lg\:px-25 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 25);
+    }
+  }
+  .lg\:px-30 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 30);
     }
   }
   .lg\:text-\[32px\] {
